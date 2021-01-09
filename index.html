@@ -9,29 +9,38 @@
 </head>
 
 <body>
-    <h1>Mad Libs 102</h1>
-    <p>Shelby Strouse, Patrick Hrabos, Stephen Leisy</p>
-    <main>
-        <div class='inputs hidden visible'>
-            <input class='input1' id='input1' placeholder='Choose a food' />
-            <input class='input2' id='input2' placeholder='Choose an emotion' />
-            <input class='input3' id='input3' placeholder='Choose a verb' />
-            <input class='input4' id='input4' placeholder='Choose a verb' />
-            <input class='input5' id='input5' placeholder='Choose a temperature' />
-            <input class='input6' id='input6' placeholder='Choose a noun' />
-            <input class='input7' id='input7' placeholder='Choose a body part' />
-            <button id='button'>Submit</button>
+    <header class="header">
+        <h1>Mad Libs</h1>
+        <p>presented by: Shelby Strouse, Patrick Hrabos, Stephen Leisy</p>
+    </header>
+    <main class="wrapper">
+        <div class="modal" id="myModal">
+            <section id="inputs" class='inputs visible modal-content'>
+                <span class="close">&times;</span>
+                <h4>
+                    Welcome to our Mad Libs! Please type a word into the boxes below, then click submit to reveal your lyrics!
+                </h4>
+                <input class='input1' id='input1' placeholder='Enter a food' />
+                <input class='input2' id='input2' placeholder='Enter an emotion' />
+                <input class='input3' id='input3' placeholder='Enter a verb' />
+                <input class='input4' id='input4' placeholder='Enter a verb' />
+                <input class='input5' id='input5' placeholder='Enter an emotional temperature' />
+                <input class='input6' id='input6' placeholder='Enter a noun' />
+                <input class='input7' id='input7' placeholder='Enter a body part' />
+                <button id='button'>Submit</button>
+            </section>
         </div>
-        <div class='lyrics hidden visible'>
-            <p>Pour some <span id='span-1'></span> on me</p>
+        <section id="lyrics" class='lyrics hidden'>
+            <p class="p1">Pour some <span id='span-1'></span> on me</p>
             <p>Ooh, in the name of <span id='span-2'></span></p>
             <p.><span id='span-3'></span> some sugar on me</p.>
             <p>C'mon, <span id='span-4'></span> me up</p>
             <p>Pour your sugar on <span id='span-5'></span></p>
             <p>I'm <span id='span-6'></span>, sticky sweet</p>
             <p>From my <span id='span-7'></span> to my feet, yeah</p>
-
-        </div>
+            <button class="reset-button" id='reset'>Reset</button>
+            
+        </section>
     </main>
 
     <script type='module' src="app.js"></script>
